@@ -1,4 +1,4 @@
-# dbt Snowflake Data Warehouse Project
+# dbt Snowflake Data Warehouse Project (In Progress)
 
 Welcome to the **dbt Snowflake Data Warehouse Project** repository!  
 This project demonstrates a modern ELT data pipeline using dbt and Snowflake, following industry best practices in data engineering and analytics. 
@@ -16,8 +16,6 @@ This project follows a two-layer dbt modeling structure:
 - **Marts Layer**  
   Builds business-ready analytical models using a **star schema** design with fact and dimension tables.  
   Materialized as **dbt tables** for optimized query performance in analytics and reporting.
-
-![High-Level Architecture](Docs/High%20Level%20Architecture.png)
 
 ---
 
