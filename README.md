@@ -5,18 +5,17 @@ This project demonstrates a modern ELT data pipeline using dbt and Snowflake, fo
 
 ---
 
-## Data Architecture
+## Data Model Architecture
 
-This project follows the **Medallion Architecture** pattern: **Staging (Silver)** and **Marts (Gold)** layers:
+This project follows a two-layer dbt modeling structure:
 
-1. **Staging (Silver) Layer**:  
-   - Cleanses, standardizes, and normalizes raw data stored in the `public` schema.  
-   - Implemented as **dbt views** based on raw tables from ERP and CRM systems.
+- **Staging Layer**  
+  Cleanses, renames, and standardizes raw source data from ERP and CRM tables in the `public` schema.  
+  Implemented as **dbt views** to preserve the latest source data.
 
-2. **Marts (Gold) Layer**:  
-   - Business-ready tables for analytics and reporting.  
-   - Implements a **star schema** with dimension and fact tables.  
-   - Materialized as **dbt tables** for optimized query performance.
+- **Marts Layer**  
+  Builds business-ready analytical models using a **star schema** design with fact and dimension tables.  
+  Materialized as **dbt tables** for optimized query performance in analytics and reporting.
 
 ![High-Level Architecture](Docs/High%20Level%20Architecture.png)
 
