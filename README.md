@@ -1,6 +1,6 @@
-# dbt Snowflake Data Warehouse Project (In Progress)
+# Snowflake Data Warehouse Project (In Progress)
 
-Welcome to the **dbt Snowflake Data Warehouse Project** repository!  
+Welcome to the **Snowflake Data Warehouse Project** repository!  
 This project demonstrates a modern ELT data pipeline using dbt and Snowflake, following industry best practices in data engineering and analytics. 
 
 ---
