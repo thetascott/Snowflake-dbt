@@ -28,7 +28,7 @@ This project involves:
 1. **Data Architecture**: Building a modern data warehouse with Silver (staging) and Gold (marts) layers.  
 2. **ELT Pipelines**: Transforming raw data in Snowflake using dbt models.  
 3. **Data Modeling**: Creating dimension and fact tables suitable for analytical queries.  
-4. **CI/CD Automation**: Ready for orchestration with Airflow (via Cosmos) for scheduled ELT runs.  
+4. **Workflow Orchestration**: Integrated with Apache Airflow (via Cosmos) to automate and schedule ELT pipelines, ensuring reliable and repeatable dbt model execution.
 5. **Documentation and Testing**: dbt-generated documentation and optional tests for data quality (unique keys, not null constraints).
 
 ---
@@ -43,8 +43,7 @@ Develop a modern ELT pipeline in Snowflake to consolidate ERP and CRM data into 
 #### Specifications
 - **Data Sources**: Raw tables from ERP and CRM systems, loaded into Snowflake `public` schema.  
 - **Data Quality**: Transformations include trimming, normalization, surrogate keys, and derived columns.  
-- **Integration**: Combine sources into Silver staging views and Gold marts tables.  
-- **Scope**: Focus on the latest dataset; historical tracking handled via surrogate keys.  
+- **Integration**: Combine sources into staging views and marts tables.   
 - **Documentation**: dbt generates model documentation and DAG for lineage.
 
 ---
