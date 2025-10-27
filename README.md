@@ -53,9 +53,7 @@ dbt_snowflake_project/
 ├── Datasets/                       # Raw datasets (ERP and CRM tables)
 │
 ├── Docs/                           # Project documentation and architecture diagrams
-│   ├── High Level Architecture.png # Overview of Silver/Gold layers
 │   ├── data_catalog.md             # Catalog of datasets and columns
-│   ├── Data Flow.png               # Data flow diagram
 │   ├── Data Model.png              # Star schema diagram
 │   ├── naming-conventions.md       # Consistent naming guidelines for tables and columns
 │
