@@ -51,7 +51,7 @@ Develop a modern ELT pipeline in Snowflake to consolidate ERP and CRM data into 
 ---
 
 ## Repository Structure
-
+```
 dbt_snowflake_project/
 │
 ├── Datasets/                       # Raw datasets (ERP and CRM tables)
@@ -71,3 +71,4 @@ dbt_snowflake_project/
 │
 ├── README.md                        # Project overview and instructions
 ├── LICENSE                          # License information
+```
