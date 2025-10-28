@@ -1,6 +1,6 @@
 # Automated ELT with Snowflake, dbt, and Airflow
 
-Welcome to the **Snowflake Data Warehouse Project** repository!  
+Welcome to the **Automated ELT with Snowflake, dbt, and Airflow** repository!  
 This project demonstrates a modern ELT data pipeline using dbt and Snowflake, following industry best practices in data engineering and analytics. 
 
 ---
@@ -53,15 +53,16 @@ dbt_snowflake_project/
 ├── Datasets/                       # Raw datasets (ERP and CRM tables)
 │
 ├── Docs/                           # Project documentation and architecture diagrams
+│   ├── Data Integration.png        # Table relationships
 │   ├── data_catalog.md             # Catalog of datasets and columns
 │   ├── Data Model.png              # Star schema diagram
 │   ├── naming-conventions.md       # Consistent naming guidelines for tables and columns
+├── dags/                           # Airflow DAGS
 │
-├── models/                         # dbt models
-│   ├── staging/                     # Silver layer views
-│   └── marts/                       # Gold layer tables (dimensions and facts)
-│
-├── Tests/                          # dbt tests or SQL quality checks
+├── dbt_src/                         # dbt project
+│   └── models/                      # dbt models
+│       └── marts/                   # marts models for analyics and business decisions
+│       └── staging/                 # staging models with cleansing and transformations                   
 │
 ├── README.md                        # Project overview and instructions
 ├── LICENSE                          # License information
