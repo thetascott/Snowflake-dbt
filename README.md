@@ -1,4 +1,4 @@
-# Snowflake Data Warehouse Project (In Progress)
+# Automated ELT with Snowflake, dbt, and Airflow
 
 Welcome to the **Snowflake Data Warehouse Project** repository!  
 This project demonstrates a modern ELT data pipeline using dbt and Snowflake, following industry best practices in data engineering and analytics. 
