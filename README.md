@@ -27,7 +27,7 @@ This project involves:
 2. **ELT Pipelines**: Transforming raw data in Snowflake using dbt models.  
 3. **Data Modeling**: Creating dimension and fact tables suitable for analytical queries.  
 4. **Workflow Orchestration**: Integrated with Apache Airflow (via Cosmos) to automate and schedule ELT pipelines, ensuring reliable and repeatable dbt model execution.
-5. **Documentation and Testing**: dbt-generated documentation and optional tests for data quality (unique keys, not null constraints).
+<!-- 5. **Documentation and Testing**: dbt-generated documentation and optional tests for data quality (unique keys, not null constraints). -->
 
 ---
 
